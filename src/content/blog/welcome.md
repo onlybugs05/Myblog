@@ -2,7 +2,7 @@
 title: 'Welcome to your Decap CMS Blog'
 description: 'This is your first post managed by Decap CMS!'
 pubDate: 'Jul 12 2026'
-heroImage: '/blog-placeholder-1.jpg'
+heroImage: '../../assets/blog-placeholder-1.jpg'
 ---
 
 Welcome to your brand new blog! 
