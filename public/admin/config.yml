@@ -1,0 +1,24 @@
+backend:
+  name: github
+  repo: onlybugs05/Myblog # IMPORTANT: Replace with your GitHub repository (e.g. ONLYBUGS05/Myblog)
+  branch: main
+  base_url: https://hrushikeshjetti.tech # IMPORTANT: Replace with your Cloudflare Pages domain
+  auth_endpoint: api/auth
+
+local_backend: true
+
+media_folder: "src/assets"
+public_folder: "../../assets"
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "src/content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Publish Date", name: "pubDate", widget: "datetime", format: "MMM DD YYYY", date_format: "MMM DD YYYY", time_format: false}
+      - {label: "Hero Image", name: "heroImage", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
