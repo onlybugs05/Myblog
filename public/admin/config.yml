@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: onlybugs05/Myblog # IMPORTANT: Replace with your GitHub repository (e.g. ONLYBUGS05/Myblog)
-  branch: main
+  branch: master
   base_url: https://hrushikeshjetti.tech # IMPORTANT: Replace with your Cloudflare Pages domain
   auth_endpoint: api/auth
 
